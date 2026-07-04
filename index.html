@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Paddle Bird Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🐦 Flappy Paddle Bird</h1>
+        <div class="scoreboard">
+            <div class="score-item">
+                <span class="label">Your Score</span>
+                <span class="score" id="playerScore">0</span>
+            </div>
+            <div class="score-item">
+                <span class="label">Computer Score</span>
+                <span class="score" id="computerScore">0</span>
+            </div>
+        </div>
+        
+        <div class="game-board" id="gameBoard">
+            <div class="paddle left-paddle" id="leftPaddle"></div>
+            <div class="bird" id="bird">🐦</div>
+            <div class="paddle right-paddle" id="rightPaddle"></div>
+        </div>
+        
+        <div class="controls">
+            <p><strong>Controls:</strong></p>
+            <p>🖱️ Move Mouse Up/Down or ⬆️⬇️ Arrow Keys</p>
+            <p>SPACE to Start/Restart Game</p>
+        </div>
+        
+        <div class="game-status" id="gameStatus">
+            <p>Press SPACE to Start</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
